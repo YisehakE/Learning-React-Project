@@ -4,10 +4,14 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+
+var helloWordElement = React.createElement('h1', { className: 'greeting' }, 'Hello, world!');
+
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  // <React.StrictMode>
+  //   <App />
+  // </React.StrictMode>,
+  helloWordElement,
   document.getElementById('root')
 );
 
